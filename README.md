@@ -1,5 +1,5 @@
 # RateMyHack
-This repo holds the code for the Sample Application RateMyHack, used in one of our Microsoft Azure modules.
+This repo holds the code for the Sample Application RateMyHack, used in one of MLH's Microsoft Azure modules. This base application was developed by Major League Hacking to help set up the dev environment for experimentation with Blockchain.
 
 ## Installing
 
