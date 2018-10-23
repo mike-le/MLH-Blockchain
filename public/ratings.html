@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rate My Hack Ratings Page">
+  <title>Rate My Hack</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="shortcut icon" href="/img/favicon.ico" />
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="/scripts/data.js"></script>
+  <script src="/scripts/ratings.js"></script>
+</head>
+
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="container navbar-content">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <img class="navbar-logo" src="/img/logo.svg"/>
+        </a>
+      </div>
+      <h1 class="navbar-title center">Rate My Hack</h1>
+    </div>
+  </div>
+
+  <div class="container" id="rating-page" style="margin-top: 100px">
+    <div class="row">
+      <div class="col-md-8 col-lg-6">
+        <h1 id="project-name"></h1>
+        <img id="project-image">
+        <p id="project-description"></p>
+        <div class="form-group">
+          <label class="title-for-rating" for="comment">Enter a rating from one to five </label>
+          <div class="stars-rating" id="creativity">
+            <span class="rate-name">Creativity</span>
+            <span class="rate-images">
+              <img data-value="1" src="/img/creativity/star-empty.png">
+              <img data-value="2" src="/img/creativity/star-empty.png">
+              <img data-value="3" src="/img/creativity/star-empty.png">
+              <img data-value="4" src="/img/creativity/star-empty.png">
+              <img data-value="5" src="/img/creativity/star-empty.png">
+            </span>
+          </div>
+          <div class="stars-rating" id="technical-complexity">
+            <span class="rate-name">Technical Complexity</span>
+            <span class="rate-images">
+              <img data-value="1" src="/img/technical-complexity/star-empty.png">
+              <img data-value="2" src="/img/technical-complexity/star-empty.png">
+              <img data-value="3" src="/img/technical-complexity/star-empty.png">
+              <img data-value="4" src="/img/technical-complexity/star-empty.png">
+              <img data-value="5" src="/img/technical-complexity/star-empty.png">
+            </span>
+          </div>
+          <div class="stars-rating" id="best-practices">
+            <span class="rate-name">Best Practices</span>
+            <span class="rate-images">
+              <img data-value="1" src="/img/best-practices/star-empty.png">
+              <img data-value="2" src="/img/best-practices/star-empty.png">
+              <img data-value="3" src="/img/best-practices/star-empty.png">
+              <img data-value="4" src="/img/best-practices/star-empty.png">
+              <img data-value="5" src="/img/best-practices/star-empty.png">
+            </span>
+          </div>
+          <button id="submit-button" class="btn btn-default btn-submit" disabled="true">Submit</button>
+        </div>
+
+        <hr />
+
+        <div id="ratings"></div>
+      </div>
+    </div>
+
+    <!-- templates -->
+    <div id="template-creativity" style="display: none">
+      <div class="creativity-rating1" style="margin-top: 12px">
+        <img src="/img/creativity/stars1-creativity.png">
+      </div>
+      <div class="creativity-rating2" style="margin-top: 12px">
+        <img src="/img/creativity/stars2-creativity.png">
+      </div>
+      <div class="creativity-rating3" style="margin-top: 12px">
+        <img src="/img/creativity/stars3-creativity.png">
+      </div>
+      <div class="creativity-rating4" style="margin-top: 12px">
+        <img src="/img/creativity/stars4-creativity.png">
+      </div>
+      <div class="creativity-rating5" style="margin-top: 12px">
+        <img src="/img/creativity/stars5-creativity.png">
+      </div>
+    </div>
+    <div id="template-technical-complexity" style="display: none">
+      <div class="technical-complexity-rating1" style="margin-top: 12px">
+        <img src="/img/technical-complexity/stars1-technical-complexity.png">
+      </div>
+      <div class="technical-complexity-rating2" style="margin-top: 12px">
+        <img src="/img/technical-complexity/stars2-technical-complexity.png">
+      </div>
+      <div class="technical-complexity-rating3" style="margin-top: 12px">
+        <img src="/img/technical-complexity/stars3-technical-complexity.png">
+      </div>
+      <div class="technical-complexity-rating4" style="margin-top: 12px">
+        <img src="/img/technical-complexity/stars4-technical-complexity.png">
+      </div>
+      <div class="technical-complexity-rating5" style="margin-top: 12px">
+        <img src="/img/technical-complexity/stars5-technical-complexity.png">
+      </div>
+    </div>
+    <div id="template-best-practices" style="display: none">
+      <div class="best-practices-rating1" style="margin-top: 12px">
+        <img src="/img/best-practices/stars1-best-practices.png">
+      </div>
+      <div class="best-practices-rating2" style="margin-top: 12px">
+        <img src="/img/best-practices/stars2-best-practices.png">
+      </div>
+      <div class="best-practices-rating3" style="margin-top: 12px">
+        <img src="/img/best-practices/stars3-best-practices.png">
+      </div>
+      <div class="best-practices-rating4" style="margin-top: 12px">
+        <img src="/img/best-practices/stars4-best-practices.png">
+      </div>
+      <div class="best-practices-rating5" style="margin-top: 12px">
+        <img src="/img/best-practices/stars5-best-practices.png">
+      </div>
+    </div>
+  </div>
+  <!-- end templates -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "engine": {
+    "node": "10.1.0"
+  },
+  "name": "reate-my-prof",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "help": "^3.0.2",
+    "nodemon": "^1.18.3",
+    "truffle-contract": "^3.0.4",
+    "web3": "^1.0.0-beta.30"
+  }
+}

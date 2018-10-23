@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Rate My Hack Home Page">
+	<title>Rate My Hack</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/stylesheets/style.css" />
+	<link rel="shortcut icon" href="/img/favicon.ico" />
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/shave/2.5.1/jquery.shave.min.js"></script>
+	<script src="/scripts/data.js"></script>
+	<script src="/scripts/index.js"></script>
+</head>
+
+<body>
+	<div class="navbar navbar-fixed-top">
+		<div class="container navbar-content">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">
+					<img class="navbar-logo" src="/img/logo.svg"/>
+				</a>
+			</div>
+			<h1 class="navbar-title center">Rate My Hack</h1>
+		</div>
+	</div>
+
+	<div class="container" id="projects" style="margin-top: 60px">
+		<div class="projects" id="projects-list">
+		</div>
+	</div>
+
+	<!-- templates -->
+	<!-- project template -->
+	<div id="project-template" class="project hidden">
+		<header class="project-header">
+			<a class="project-url" >
+				<h3 class="project-name"></h3>
+			</a>
+			<!-- TODO: FIX THIS -->
+			<h3 class="project-team">mlh.io</h3>
+		</header>
+
+		<p class="project-description overflow-ellipsis"></p>
+
+
+		<div class="ratings">
+			<div class="creativity-rating">
+				<img class="stars" width="100" src="img/creativity/stars0-creativity.png" />
+			</div>
+			<div class="best-practices-rating">
+				<img class="stars" width="100" src="img/best-practices/stars0-best-practices.png" />
+			</div>
+			<div class="technical-complexity-rating">
+				<img class="stars" width="100" src="img/technical-complexity/stars0-technical-complexity.png" />
+			</div>
+		</div>
+	</div>
+	<!-- end project template -->
+	<!-- end templates -->
+</body>
+</html>
