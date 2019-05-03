@@ -18,7 +18,8 @@
     "express": "^4.16.2",
     "help": "^3.0.2",
     "nodemon": "^1.18.3",
+    "tar": "^4.4.2",
     "truffle-contract": "^3.0.4",
-    "web3": "^1.0.0-beta.30"
+    "web3": "^1.0.0-beta.54"
   }
 }
