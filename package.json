@@ -17,6 +17,7 @@
     "event-stream": "^3.3.4",
     "express": "^4.16.2",
     "help": "^3.0.2",
+    "lodash": "^4.17.14",
     "nodemon": "^1.18.3",
     "tar": "^4.4.2",
     "truffle-contract": "^3.0.4",
